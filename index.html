@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Australia Take-Home Pay Calculator 2025–26 — ATO Tax, Medicare & HECS</title>
+<meta name="description" content="Free Australian salary calculator 2025–26. Calculate your take-home pay after income tax, Medicare levy, and HECS-HELP repayments. Updated for ATO 2025–26 rates.">
+<meta name="keywords" content="australia take home pay calculator, Australian salary calculator, ATO tax calculator, net pay calculator australia, HECS calculator, medicare levy calculator 2025">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦘</text></svg>">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6626869606288906" crossorigin="anonymous"></script>
+<meta property="og:title" content="Australia Take-Home Pay Calculator 2025–26">
+<meta property="og:description" content="See exactly what you take home after ATO tax, Medicare levy, and HECS. Updated for 2025–26.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Australia Take-Home Pay Calculator","description":"Free Australian salary calculator for 2025–26 tax year","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the tax-free threshold in Australia?","acceptedAnswer":{"@type":"Answer","text":"The tax-free threshold in Australia is $18,200. If you earn less than $18,200, you pay no income tax. Above that, a progressive tax system applies with rates from 19% up to 45% for incomes over $180,000."}},{"@type":"Question","name":"What is the Medicare levy in Australia?","acceptedAnswer":{"@type":"Answer","text":"The Medicare levy is 2% of your taxable income. It funds Australia's public healthcare system (Medicare). Low-income earners may be exempt or pay a reduced amount. The levy applies in addition to income tax."}},{"@type":"Question","name":"What is HECS-HELP and how is it repaid?","acceptedAnswer":{"@type":"Answer","text":"HECS-HELP is the Australian government's student loan scheme for higher education. Repayments are made through your tax return once your income exceeds the minimum threshold ($54,435 in 2024–25). The repayment rate increases with income, from 1% to 10%."}},{"@type":"Question","name":"How does super salary sacrifice work?","acceptedAnswer":{"@type":"Answer","text":"Salary sacrifice super involves directing pre-tax salary into your superannuation account. This reduces your taxable income and can lower your income tax and Medicare levy. Salary sacrifice contributions are taxed at 15% inside the fund, which is lower than most income tax rates."}},{"@type":"Question","name":"What is the Low Income Tax Offset (LITO)?","acceptedAnswer":{"@type":"Answer","text":"The LITO is an ATO tax offset worth up to $700 for low-income earners. It reduces the tax you owe. The full $700 applies to incomes up to $37,500, then phases out gradually and reaches $0 at $66,667. The offset is applied automatically — you do not need to claim it separately."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8fafc;--s:#fff;--b:#e2e8f0;--b2:#cbd5e1;--t:#0f172a;--m:#64748b;--d:#94a3b8;--bl:#1d4ed8;--bl-l:#eff6ff;--bl-b:#bfdbfe;--gn:#16a34a;--gn-l:#f0fdf4;--gn-b:#bbf7d0;--yl:#d97706;--yl-l:#fffbeb;--yl-b:#fde68a;--rd:#dc2626;--pu:#7c3aed;--pu-l:#f5f3ff;--pu-b:#ddd6fe}
+body{background:var(--bg);color:var(--t);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;line-height:1.6}
+a{color:var(--bl)}a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--s);border-bottom:1px solid var(--b);padding:14px 0}
+.hdr{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:20px;font-weight:800;letter-spacing:-.5px}.logo em{color:var(--bl);font-style:normal}
+.flag{font-size:18px;margin-right:6px}
+.hero{padding:32px 0 24px;text-align:center}
+.hero h1{font-size:clamp(22px,4vw,38px);font-weight:800;line-height:1.15;letter-spacing:-.5px;margin-bottom:10px}
+.hero h1 em{color:var(--bl);font-style:normal}
+.hero p{font-size:16px;color:var(--m);max-width:540px;margin:0 auto 18px}
+.badge-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.badge{background:var(--s);border:1px solid var(--b);border-radius:20px;padding:3px 13px;font-size:12px;font-weight:600;color:var(--m)}
+.badge.gn{background:var(--gn-l);border-color:var(--gn-b);color:var(--gn)}
+.grid{display:grid;grid-template-columns:1fr 300px;gap:22px;padding-bottom:48px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--s);border:1px solid var(--b);border-radius:16px;padding:24px}
+.card-title{font-size:15px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.card-title::before{content:'';width:4px;height:18px;background:var(--bl);border-radius:2px}
+.fg{margin-bottom:14px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--m);margin-bottom:5px;text-transform:uppercase;letter-spacing:.2px}
+select,input[type=number]{width:100%;padding:10px 13px;border:1.5px solid var(--b2);border-radius:8px;font-size:15px;color:var(--t);background:var(--s);transition:border-color .15s;-moz-appearance:textfield}
+input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
+select:focus,input:focus{outline:none;border-color:var(--bl)}
+.iw{position:relative}.pfx{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-weight:700;color:var(--m);pointer-events:none}
+.has-pfx input{padding-left:26px}
+.hint{font-size:11px;color:var(--d);margin-top:4px}
+.fr2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tab-toggle{display:flex;background:var(--bg);border:1px solid var(--b2);border-radius:8px;padding:3px;gap:2px;margin-bottom:16px}
+.tt-btn{flex:1;background:none;border:none;border-radius:6px;padding:6px 10px;font-size:12px;font-weight:600;color:var(--m);cursor:pointer;transition:all .12s}
+.tt-btn.active{background:var(--s);color:var(--bl);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.calc-btn{width:100%;background:var(--bl);color:#fff;border:none;border-radius:10px;padding:13px;font-size:16px;font-weight:700;cursor:pointer;margin-top:4px;transition:background .15s}
+.calc-btn:hover{background:#1e40af}
+.result-box{display:none;margin-top:22px;border-radius:12px;padding:22px;border:2px solid var(--gn-b);background:var(--gn-l)}
+.r-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;opacity:.7;margin-bottom:4px}
+.r-score{font-size:50px;font-weight:800;line-height:1;letter-spacing:-1px;color:var(--gn)}
+.r-sub{font-size:13px;color:var(--m);margin-top:5px;margin-bottom:16px}
+.r-periods{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.r-p{background:rgba(0,0,0,.04);border-radius:8px;padding:10px;text-align:center}
+.r-p-v{font-size:16px;font-weight:800}.r-p-l{font-size:10px;color:var(--m);text-transform:uppercase;letter-spacing:.3px;margin-top:2px}
+.breakdown{display:flex;flex-direction:column;gap:0}
+.br-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.br-row:last-child{border-bottom:none;font-weight:700;font-size:14px}
+.br-row label{color:var(--m);display:flex;align-items:center;gap:6px}
+.br-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0}
+.br-neg{color:var(--rd)}.br-pos{color:var(--gn)}
+.eff-rate{display:flex;gap:12px;margin-top:14px}
+.er-box{flex:1;background:rgba(0,0,0,.04);border-radius:8px;padding:10px;text-align:center}
+.er-v{font-size:20px;font-weight:800}.er-l{font-size:10px;color:var(--m);text-transform:uppercase;margin-top:2px}
+.info-card{background:var(--s);border:1px solid var(--b);border-radius:12px;padding:16px;margin-bottom:12px}
+.info-card h3{font-size:14px;font-weight:700;margin-bottom:10px}
+.band-row{display:flex;align-items:center;gap:8px;font-size:12px;margin-bottom:6px}
+.band-dot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+.faq-item{border-bottom:1px solid var(--b);padding:10px 0;cursor:pointer}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-size:13px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.faq-q::after{content:'+';font-size:17px;color:var(--d)}
+.faq-item.open .faq-q::after{content:'−'}
+.faq-a{display:none;font-size:12px;color:var(--m);margin-top:7px;line-height:1.6}
+.faq-item.open .faq-a{display:block}
+.seo{background:var(--s);border:1px solid var(--b);border-radius:16px;padding:28px;margin-bottom:28px}
+.seo h2{font-size:21px;font-weight:800;margin-bottom:12px}
+.seo h3{font-size:15px;font-weight:700;margin:20px 0 8px}
+.seo p{color:var(--m);margin-bottom:10px;font-size:14px}
+.seo ul{color:var(--m);padding-left:18px;font-size:14px}.seo ul li{margin-bottom:5px}
+.tax-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+.tax-table th{text-align:left;padding:7px 10px;background:var(--bg);font-size:10px;text-transform:uppercase;color:var(--m);border-bottom:2px solid var(--b)}
+.tax-table td{padding:8px 10px;border-bottom:1px solid var(--b)}
+.tax-table tr:last-child td{border-bottom:none}
+.t0{color:var(--gn);font-weight:600}.t19{color:#0891b2;font-weight:600}.t325{color:var(--bl);font-weight:600}.t37{color:var(--yl);font-weight:600}.t45{color:var(--rd);font-weight:600}
+footer{background:var(--s);border-top:1px solid var(--b);padding:20px 0;text-align:center;font-size:12px;color:var(--d)}
+footer p{margin-bottom:4px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap"><div class="hdr">
+    <div class="logo"><span class="flag">🇦🇺</span>AU<em>Pay</em>Calc.io</div>
+    <div style="font-size:12px;color:var(--m)">Free · 2025–26 tax year</div>
+  </div></div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Australia Take-Home Pay Calculator<br><em>2025–26 Tax Year</em></h1>
+    <p>See exactly what you keep after ATO income tax, Medicare levy, HECS-HELP repayments, and super salary sacrifice.</p>
+    <div class="badge-row">
+      <span class="badge gn">✓ Free · No signup</span>
+      <span class="badge">2025–26 ATO rates</span>
+      <span class="badge">LITO included</span>
+      <span class="badge">HECS-HELP included</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <div class="card-title">Your Salary Details</div>
+
+        <div class="tab-toggle">
+          <button class="tt-btn active" onclick="setFreq('annual',this)">Annual</button>
+          <button class="tt-btn" onclick="setFreq('monthly',this)">Monthly</button>
+          <button class="tt-btn" onclick="setFreq('weekly',this)">Weekly</button>
+          <button class="tt-btn" onclick="setFreq('hourly',this)">Hourly</button>
+        </div>
+
+        <div class="fg">
+          <label id="income-label">Annual Gross Salary</label>
+          <div class="iw has-pfx"><span class="pfx">$</span>
+            <input type="number" id="income" placeholder="80,000" min="0">
+          </div>
+          <div class="hint" id="income-hint">Enter your gross salary before any deductions</div>
+        </div>
+
+        <div class="fr2">
+          <div class="fg">
+            <label>Super Salary Sacrifice</label>
+            <div class="iw has-pfx"><span class="pfx">%</span>
+              <input type="number" id="superExtra" placeholder="0" min="0" max="100" style="padding-left:30px">
+            </div>
+            <div class="hint">Extra % on top of employer 11.5%</div>
+          </div>
+          <div class="fg">
+            <label>Hours per week <span style="font-weight:400;font-size:10px">(hourly only)</span></label>
+            <input type="number" id="hours" placeholder="38" min="1" max="80">
+          </div>
+        </div>
+
+        <div class="fg">
+          <label>HECS-HELP Debt</label>
+          <select id="hecs">
+            <option value="none">No HECS-HELP debt</option>
+            <option value="yes">I have a HECS-HELP debt</option>
+          </select>
+          <div class="hint">Repayments start at $54,435 income (2024–25 threshold)</div>
+        </div>
+
+        <button class="calc-btn" onclick="calculate()">Calculate My Take-Home →</button>
+
+        <div class="result-box" id="result">
+          <div class="r-label">Annual Take-Home Pay</div>
+          <div class="r-score" id="r-annual">—</div>
+          <div class="r-sub" id="r-sub">After all deductions</div>
+          <div class="r-periods">
+            <div class="r-p"><div class="r-p-v" id="r-monthly">—</div><div class="r-p-l">Per Month</div></div>
+            <div class="r-p"><div class="r-p-v" id="r-weekly">—</div><div class="r-p-l">Per Week</div></div>
+            <div class="r-p"><div class="r-p-v" id="r-daily">—</div><div class="r-p-l">Per Day</div></div>
+          </div>
+          <div class="breakdown" id="r-breakdown"></div>
+          <div class="eff-rate" id="r-rates"></div>
+        </div>
+      </div>
+
+      <div class="seo" style="margin-top:22px">
+        <h2>Australian Income Tax Rates 2025–26</h2>
+        <p>Australia uses a progressive income tax system — different portions of your income are taxed at different rates. Everyone who is a resident can earn up to <strong>$18,200 tax-free</strong> (the tax-free threshold). Above that, rates increase from 19% through to 45% for very high earners.</p>
+
+        <table class="tax-table">
+          <tr><th>Taxable Income</th><th>Tax Rate</th><th>Tax on this Band</th></tr>
+          <tr><td>$0 – $18,200</td><td class="t0">0%</td><td>Nil</td></tr>
+          <tr><td>$18,201 – $45,000</td><td class="t19">19%</td><td>19c for each $1 over $18,200</td></tr>
+          <tr><td>$45,001 – $120,000</td><td class="t325">32.5%</td><td>$5,092 + 32.5c for each $1 over $45,000</td></tr>
+          <tr><td>$120,001 – $180,000</td><td class="t37">37%</td><td>$29,467 + 37c for each $1 over $120,000</td></tr>
+          <tr><td>$180,001+</td><td class="t45">45%</td><td>$51,667 + 45c for each $1 over $180,000</td></tr>
+        </table>
+
+        <h3>Medicare Levy</h3>
+        <p>The Medicare levy is an additional <strong>2%</strong> of your taxable income, funding Australia's universal healthcare (Medicare). If you earn below $26,000, you may be exempt. Earners between $26,000 and $32,500 pay a reduced levy. Most working Australians pay the full 2%.</p>
+
+        <h3>Low Income Tax Offset (LITO)</h3>
+        <p>The LITO reduces your tax by up to <strong>$700</strong> if you earn $37,500 or less. The offset then phases out: at $45,000 it reduces to $325, and completely phases out at $66,667. The ATO applies this automatically — no action needed.</p>
+
+        <h3>HECS-HELP Repayments</h3>
+        <p>If you have a student debt from university or TAFE, you start repaying it through your tax when your repayment income exceeds <strong>$54,435</strong>. Repayment rates range from 1% to 10% depending on your income — the ATO collects this alongside your income tax.</p>
+
+        <h3>Superannuation — Employer Contributions</h3>
+        <p>Your employer must pay <strong>11.5%</strong> of your ordinary time earnings into your super fund (2025–26 rate), on top of your salary. This is not deducted from your take-home pay — it is an additional cost paid by your employer. You can also make voluntary salary sacrifice contributions to reduce your taxable income.</p>
+
+        <h3>How to Maximise Your Take-Home Pay in Australia</h3>
+        <ul>
+          <li><strong>Super salary sacrifice</strong> — pre-tax contributions reduce your taxable income, saving you income tax at your marginal rate. Concessional contributions inside super are taxed at 15% — much lower than 32.5%+ for most workers.</li>
+          <li><strong>Claim the tax-free threshold</strong> — make sure you've ticked the tax-free threshold box on your Tax File Number Declaration for your main job. If not, your employer will withhold too much tax.</li>
+          <li><strong>HECS voluntary repayments</strong> — making voluntary HECS repayments of $500+ earns a 10% bonus discount. If you have the cash, it's an effective 10% return with no risk.</li>
+          <li><strong>Work-related deductions</strong> — uniforms, tools, home office, professional memberships and training all reduce your taxable income. Keep receipts and claim at tax time.</li>
+          <li><strong>Private health insurance</strong> — if you earn over $93,000 (singles) or $186,000 (couples), private hospital cover avoids the Medicare Levy Surcharge (an extra 1–1.5% tax).</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="info-card">
+        <h3>2025–26 Key Thresholds</h3>
+        <div class="band-row"><div class="band-dot" style="background:#16a34a"></div><span><strong>$18,200</strong> — Tax-free threshold</span></div>
+        <div class="band-row"><div class="band-dot" style="background:#0891b2"></div><span><strong>$45,000</strong> — 32.5% tax rate begins</span></div>
+        <div class="band-row"><div class="band-dot" style="background:#2563eb"></div><span><strong>$120,000</strong> — 37% tax rate begins</span></div>
+        <div class="band-row"><div class="band-dot" style="background:#d97706"></div><span><strong>$180,000</strong> — 45% tax rate begins</span></div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--b);font-size:12px">
+          <div style="margin-bottom:5px"><strong>Other thresholds:</strong></div>
+          <div style="font-size:11px;color:var(--m)">LITO max $700 ≤ $37,500 · phases out at $66,667</div>
+          <div style="font-size:11px;color:var(--m);margin-top:3px">Medicare levy exemption below ~$26,000</div>
+          <div style="font-size:11px;color:var(--m);margin-top:3px">HECS repayments start at $54,435</div>
+          <div style="font-size:11px;color:var(--m);margin-top:3px">Super SGC: 11.5% (employer-paid)</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">What is the tax-free threshold?</div>
+          <div class="faq-a">The tax-free threshold is $18,200. As an Australian resident, you can earn up to this amount each financial year without paying any income tax. You must claim the threshold on your Tax File Number Declaration with your employer — if you don't, too much tax will be withheld.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">What is the Medicare levy?</div>
+          <div class="faq-a">The Medicare levy is 2% of your taxable income and helps fund Australia's public health system. Most employed Australians pay the full 2%. If you earn below $26,000 you may be exempt or pay a reduced amount. High earners without private health insurance may also pay the Medicare Levy Surcharge (1–1.5% extra).</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">How are HECS-HELP repayments calculated?</div>
+          <div class="faq-a">HECS repayments are based on your repayment income (roughly your taxable income). The repayment rate starts at 1% once you earn $54,435 and increases progressively up to 10% for incomes above $151,201. The ATO automatically collects the repayment as part of your tax — you don't make separate payments unless you choose to.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">Does the calculator include the Stage 3 tax cuts?</div>
+          <div class="faq-a">Yes. This calculator uses the 2025–26 ATO tax tables, which include the revised Stage 3 tax cuts that took effect on 1 July 2024. The cuts lowered the 19% rate threshold and changed the 32.5% and 37% bands, resulting in most Australians keeping more of their income.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">Why is my actual pay different from the estimate?</div>
+          <div class="faq-a">This calculator uses standard ATO rates and assumes you are an Australian tax resident who has claimed the tax-free threshold. Your actual payslip may differ if you have investment income, rental income, or other deductions that affect your tax code. It also assumes PAYG withholding — contractors and the self-employed calculate tax differently.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>AUPayCalc.io — Free Australia Take-Home Pay Calculator 2025–26</p>
+    <p style="margin-top:5px">Results are estimates based on ATO 2025–26 rates for Australian tax residents. Not tax advice. For personalised guidance, consult the ATO at ato.gov.au or a registered tax agent.</p>
+    <p style="margin-top:8px"><a href="/privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script>
+var inputFreq = 'annual';
+
+function setFreq(f, btn) {
+  inputFreq = f;
+  document.querySelectorAll('.tt-btn').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  var labels = {annual:'Annual Gross Salary',monthly:'Monthly Gross Salary',weekly:'Weekly Gross Salary',hourly:'Hourly Rate'};
+  var hints = {annual:'Enter your gross annual salary before deductions',monthly:'Enter your gross monthly pay before deductions',weekly:'Enter your gross weekly pay before deductions',hourly:'Enter your hourly rate (before tax)'};
+  var placeholders = {annual:'80,000',monthly:'6,666',weekly:'1,538',hourly:'38.00'};
+  document.getElementById('income-label').textContent = labels[f];
+  document.getElementById('income-hint').textContent = hints[f];
+  document.getElementById('income').placeholder = placeholders[f];
+  document.getElementById('hours').closest('.fg').style.opacity = f==='hourly'?'1':'0.4';
+}
+
+function toAnnual(val, freq, hoursPerWeek) {
+  if (freq==='monthly') return val * 12;
+  if (freq==='weekly') return val * 52;
+  if (freq==='hourly') return val * (hoursPerWeek||38) * 52;
+  return val;
+}
+
+function calcIncomeTax(taxable) {
+  var tax = 0;
+  if (taxable <= 18200) {
+    tax = 0;
+  } else if (taxable <= 45000) {
+    tax = (taxable - 18200) * 0.19;
+  } else if (taxable <= 120000) {
+    tax = 5092 + (taxable - 45000) * 0.325;
+  } else if (taxable <= 180000) {
+    tax = 29467 + (taxable - 120000) * 0.37;
+  } else {
+    tax = 51667 + (taxable - 180000) * 0.45;
+  }
+  return tax;
+}
+
+function calcLITO(taxable) {
+  if (taxable <= 37500) return 700;
+  if (taxable <= 45000) return 700 - (taxable - 37500) * 0.05;
+  if (taxable <= 66667) return 325 - (taxable - 45000) * 0.015;
+  return 0;
+}
+
+function calcMedicare(taxable) {
+  var threshold = 26000;
+  var shadeIn = 32500;
+  if (taxable <= threshold) return 0;
+  if (taxable <= shadeIn) return (taxable - threshold) * 0.10;
+  return taxable * 0.02;
+}
+
+function calcHECS(income) {
+  var brackets = [
+    [54435,0],[59999,0.01],[65194,0.02],[70623,0.025],[76947,0.03],
+    [83482,0.035],[90656,0.04],[99215,0.045],[109137,0.05],[118998,0.055],
+    [128985,0.06],[141022,0.065],[151201,0.07],[165471,0.075],[182429,0.08],
+    [199765,0.085],[218369,0.09],[Infinity,0.10]
+  ];
+  var rate = 0;
+  for (var i = brackets.length - 1; i >= 0; i--) {
+    if (income > brackets[i][0]) { rate = brackets[i][1]; break; }
+  }
+  return income * rate;
+}
+
+function fmt(n) { return '$' + Math.round(n).toLocaleString('en-AU'); }
+function fmtPct(n) { return (n*100).toFixed(1)+'%'; }
+
+function calculate() {
+  var rawIncome = parseFloat(document.getElementById('income').value)||0;
+  var hours = parseFloat(document.getElementById('hours').value)||38;
+  var superPct = parseFloat(document.getElementById('superExtra').value)||0;
+  var hasHecs = document.getElementById('hecs').value === 'yes';
+
+  if (rawIncome<=0) { alert('Please enter your salary.'); return; }
+
+  var gross = toAnnual(rawIncome, inputFreq, hours);
+  var superSacrifice = gross * (superPct/100);
+  var taxable = gross - superSacrifice;
+
+  var incomeTax = calcIncomeTax(taxable);
+  var lito = Math.min(calcLITO(taxable), incomeTax);
+  var taxAfterLITO = Math.max(0, incomeTax - lito);
+  var medicare = calcMedicare(taxable);
+  var hecs = hasHecs ? calcHECS(taxable) : 0;
+
+  var totalDeductions = taxAfterLITO + medicare + superSacrifice + hecs;
+  var takeHome = gross - totalDeductions;
+  var employerSuper = gross * 0.115;
+
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('r-annual').textContent = fmt(takeHome);
+  document.getElementById('r-sub').textContent = fmt(gross) + ' gross → ' + fmt(takeHome) + ' net';
+  document.getElementById('r-monthly').textContent = fmt(takeHome/12);
+  document.getElementById('r-weekly').textContent = fmt(takeHome/52);
+  document.getElementById('r-daily').textContent = fmt(takeHome/260);
+
+  var rows = [
+    {label:'Gross Salary', dot:'#16a34a', val:gross, neg:false},
+    {label:'Income Tax', dot:'#dc2626', val:taxAfterLITO, neg:true},
+    {label:'Medicare Levy (2%)', dot:'#d97706', val:medicare, neg:true},
+  ];
+  if (superSacrifice>0) rows.push({label:'Super Salary Sacrifice ('+superPct+'%)', dot:'#7c3aed', val:superSacrifice, neg:true});
+  if (hecs>0) rows.push({label:'HECS-HELP Repayment', dot:'#0891b2', val:hecs, neg:true});
+  rows.push({label:'Take-Home Pay', dot:'#16a34a', val:takeHome, neg:false});
+  rows.push({label:'Employer Super (11.5%) ✦', dot:'#94a3b8', val:employerSuper, neg:false});
+
+  document.getElementById('r-breakdown').innerHTML = rows.map(function(r) {
+    return '<div class="br-row"><label><div class="br-dot" style="background:'+r.dot+'"></div>'+r.label+'</label><span class="'+(r.neg?'br-neg':'br-pos')+'">'+fmt(r.val)+'</span></div>';
+  }).join('') + '<div style="font-size:10px;color:var(--d);margin-top:6px">✦ Employer super is paid on top of your salary — not deducted from your take-home.</div>';
+
+  document.getElementById('r-rates').innerHTML =
+    '<div class="er-box"><div class="er-v">'+fmtPct(taxAfterLITO/gross)+'</div><div class="er-l">Effective Tax</div></div>'+
+    '<div class="er-box"><div class="er-v">'+fmtPct(medicare/gross)+'</div><div class="er-l">Medicare Levy</div></div>'+
+    '<div class="er-box"><div class="er-v">'+fmtPct(totalDeductions/gross)+'</div><div class="er-l">Total Deducted</div></div>';
+
+  document.getElementById('result').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+document.addEventListener('keydown', function(e){ if(e.key==='Enter') calculate(); });
+document.getElementById('hours').closest('.fg').style.opacity = '0.4';
+</script>
+</body>
+</html>
