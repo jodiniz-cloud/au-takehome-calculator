@@ -6,6 +6,7 @@
 <title>Australia Take-Home Pay Calculator 2025–26 — ATO Tax, Medicare & HECS</title>
 <meta name="description" content="Free Australian salary calculator 2025–26. Calculate your take-home pay after income tax, Medicare levy, and HECS-HELP repayments. Updated for ATO 2025–26 rates.">
 <meta name="keywords" content="australia take home pay calculator, Australian salary calculator, ATO tax calculator, net pay calculator australia, HECS calculator, medicare levy calculator 2025">
+<link rel="canonical" href="https://au-takehome-calculator.pages.dev/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦘</text></svg>">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6626869606288906" crossorigin="anonymous"></script>
 <meta property="og:title" content="Australia Take-Home Pay Calculator 2025–26">
@@ -136,7 +137,7 @@ footer p{margin-bottom:4px}
             <div class="iw has-pfx"><span class="pfx">%</span>
               <input type="number" id="superExtra" placeholder="0" min="0" max="100" style="padding-left:30px">
             </div>
-            <div class="hint">Extra % on top of employer 11.5%</div>
+            <div class="hint">Extra % on top of employer 12%</div>
           </div>
           <div class="fg">
             <label>Hours per week <span style="font-weight:400;font-size:10px">(hourly only)</span></label>
@@ -192,7 +193,7 @@ footer p{margin-bottom:4px}
         <p>If you have a student debt from university or TAFE, you start repaying it through your tax when your repayment income exceeds <strong>$54,435</strong>. Repayment rates range from 1% to 10% depending on your income — the ATO collects this alongside your income tax.</p>
 
         <h3>Superannuation — Employer Contributions</h3>
-        <p>Your employer must pay <strong>11.5%</strong> of your ordinary time earnings into your super fund (2025–26 rate), on top of your salary. This is not deducted from your take-home pay — it is an additional cost paid by your employer. You can also make voluntary salary sacrifice contributions to reduce your taxable income.</p>
+        <p>Your employer must pay <strong>12%</strong> of your ordinary time earnings into your super fund (2025–26 rate), on top of your salary. This is not deducted from your take-home pay — it is an additional cost paid by your employer. You can also make voluntary salary sacrifice contributions to reduce your taxable income.</p>
 
         <h3>How to Maximise Your Take-Home Pay in Australia</h3>
         <ul>
@@ -218,7 +219,7 @@ footer p{margin-bottom:4px}
           <div style="font-size:11px;color:var(--m)">LITO max $700 ≤ $37,500 · phases out at $66,667</div>
           <div style="font-size:11px;color:var(--m);margin-top:3px">Medicare levy exemption below ~$26,000</div>
           <div style="font-size:11px;color:var(--m);margin-top:3px">HECS repayments start at $54,435</div>
-          <div style="font-size:11px;color:var(--m);margin-top:3px">Super SGC: 11.5% (employer-paid)</div>
+          <div style="font-size:11px;color:var(--m);margin-top:3px">Super SGC: 12% (employer-paid)</div>
         </div>
       </div>
       <div class="info-card">
@@ -347,7 +348,7 @@ function calculate() {
 
   var totalDeductions = taxAfterLITO + medicare + superSacrifice + hecs;
   var takeHome = gross - totalDeductions;
-  var employerSuper = gross * 0.115;
+  var employerSuper = gross * 0.12;
 
   document.getElementById('result').style.display = 'block';
   document.getElementById('r-annual').textContent = fmt(takeHome);
@@ -364,7 +365,7 @@ function calculate() {
   if (superSacrifice>0) rows.push({label:'Super Salary Sacrifice ('+superPct+'%)', dot:'#7c3aed', val:superSacrifice, neg:true});
   if (hecs>0) rows.push({label:'HECS-HELP Repayment', dot:'#0891b2', val:hecs, neg:true});
   rows.push({label:'Take-Home Pay', dot:'#16a34a', val:takeHome, neg:false});
-  rows.push({label:'Employer Super (11.5%) ✦', dot:'#94a3b8', val:employerSuper, neg:false});
+  rows.push({label:'Employer Super (12%) ✦', dot:'#94a3b8', val:employerSuper, neg:false});
 
   document.getElementById('r-breakdown').innerHTML = rows.map(function(r) {
     return '<div class="br-row"><label><div class="br-dot" style="background:'+r.dot+'"></div>'+r.label+'</label><span class="'+(r.neg?'br-neg':'br-pos')+'">'+fmt(r.val)+'</span></div>';
